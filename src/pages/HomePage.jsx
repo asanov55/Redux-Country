@@ -11,14 +11,14 @@ import {
   selectVisibaleCountries,
 } from '../store/countries/countries-selectors';
 import { loadCountries } from '../store/countries/countries-actions';
-import { selectSearch } from '../store/controls/controls-selectors';
+import { selectControls } from '../store/controls/controls-selectors';
 
 export const HomePage = () => {
   const navigate = useNavigate();
-  const search = useSelector(selectSearch);
+  const { search, region } = useSelector(selectControls);
   const dispatch = useDispatch();
   const countries = useSelector((state) =>
-    selectVisibaleCountries(state, { search })
+    selectVisibaleCountries(state, { search, region })
   );
   const { status, error, qty } = useSelector(selectCountriesInfo);
 
