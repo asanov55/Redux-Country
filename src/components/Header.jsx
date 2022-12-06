@@ -6,7 +6,7 @@ import { IoMoon, IoMoonOutline } from 'react-icons/io5';
 
 import { Container } from './Container';
 import { setTheme } from '../store/theme/theme-actions';
-import { selectSearch } from '../store/controls/controls-selectors';
+
 import { clearControls } from '../store/controls/controls-actions';
 
 const HeaderEl = styled.header`
@@ -45,7 +45,6 @@ export const Header = () => {
 
   const toggleTheme = () =>
     dispatch(setTheme(theme === 'light' ? 'dark' : 'light'));
-  const search = useSelector(selectSearch);
 
   useEffect(() => {
     document.body.setAttribute('data-theme', theme);

@@ -6,7 +6,6 @@ import { List } from '../components/List';
 import { Card } from '../components/Card';
 import { Controls } from '../components/Controls';
 import {
-  selectAllCountries,
   selectCountriesInfo,
   selectVisibaleCountries,
 } from '../store/countries/countries-selectors';
