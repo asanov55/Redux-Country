@@ -1,4 +1,4 @@
-(https://redux-country-asanov55.vercel.app/).
+(https://redux-country-asanov55.vercel.app/)
 
 # Frontend Mentor - REST Countries API with color theme switcher solution
 
